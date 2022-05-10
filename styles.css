@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 15px;
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    background-color: #cacaca;
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+}
+
+.row-vs-column {
+    border: solid black 5px;
+    background-color: rgb(205, 221, 245);
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.item {
+    background-color: #ff0037;
+    color: #fff;
+    font-size: 35px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Alignment 1-2-3 across a box */
+
+#container-column {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-col-1 {
+    align-self: flex-start;
+}
+
+.item-col-3 {
+    align-self: flex-end;
+}
+
+/* Alignment 1-2-3 across a box */
+
+#container2 {
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.item-col {
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.example-box {
+    margin: 30px auto;
+    padding: 5px;
+    max-width: 1000px;  
+}
+
+.justify-content-container {
+    border: solid 1px rgb(255, 111, 0);
+
+}
+
+.align-items-container {
+    border: solid 1px rgb(34, 0, 255);
+}
+
+#container-justify-center {
+    justify-content: center;
+}
+
+#container-justify-flex-start {
+    justify-content: flex-start;
+}
+
+#container-justify-flex-end {
+    justify-content: flex-end;
+}
+
+#container-justify-space-between {
+    justify-content: space-between;
+}
+
+#container-justify-space-around {
+    justify-content: space-around;
+}
+
+#container-justify-space-evenly {
+    justify-content: space-evenly
+}
+
+.item-align-item {
+    height: 200px;
+}
+
+#container-align-items-center {
+    justify-content: center;
+    align-items: center;
+}
+
+#container-align-items-flex-start {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#container-align-items-flex-end {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flex-basis-container {
+    border: solid 1px green;
+}
+
+#container-flex-grow .item {
+    flex-grow: 1;
+    border: solid rgb(0, 0, 0) 1px;
+    margin: 0;
+}
+
+#container-flex-grow-individual .item {
+    border: solid rgb(255, 255, 255) 1px;
+    margin: 0;
+    flex-grow: 1;
+}
+#container-flex-grow-individual .item-1 {
+    flex-grow: 5;
+}
+
+
+

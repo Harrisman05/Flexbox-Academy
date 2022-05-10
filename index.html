@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1> Flexbox Academy </h1>
+    <h3>Main axis = justify-content</h3>
+    <h3>Cross axis = align-items</h3>
+
+    <div class="container row-vs-column">
+
+        <p>flex-direction: row; <br> Aligns items horizontally <br> Main axis = horizontal (left >>> right) <br> Cross axis = vertical (up >>> down) </p>
+
+        <div class="container" id="container1">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-5">5</div>
+        </div>
+
+        <p>flex-direction: column; <br>  Aligns items vertically, items take up full width of container <br> Main axis = vertical, Cross axis = horizontal</p>
+
+        <div class="container" id="container2">
+            <div class="item item-col">1</div>
+            <div class="item item-col">2</div>
+            <div class="item item-col">3</div>
+            <div class="item item-col">4</div>
+            <div class="item item-col">5</div>
+        </div>
+       
+        <div class="example-box align-items-container">
+
+            <h2>Flex-direction: column</h2>
+            <h4>Using cross axis of flex children (align-self) to align boxes</h4>
+            
+            <div class="container" id="container-column">
+                <div class="item item-col-1">1</div>
+                <div class="item item-col-2">2</div>
+                <div class="item item-col-3">3</div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <h1>justify-content</h1>
+    <h2>Aligning items on the main axis</h2>
+
+    <div class="example-box justify-content-container">
+
+        <h2>justify-content: center;</h2>
+        <h4>Flex children align in center of container</h4>
+
+        <div class="container" id="container-justify-center">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+
+    </div>
+
+    <div class="example-box justify-content-container">
+
+        <h2>justify-content: flex-start;</h2>
+        <h4>Flex children align at start of main axis (left side for row flex direction)</h4>
+
+        <div class="container" id="container-justify-flex-start">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+
+    </div>
+
+    <div class="example-box justify-content-container">
+
+        <h2>justify-content: flex-end;</h2>
+        <h4>Flex children align at end of main axis (right side for row flex direction)</h4>
+
+        <div class="container" id="container-justify-flex-end">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+
+    </div>
+
+    <div class="example-box justify-content-container">
+
+        <h2>justify-content: space-between;</h2>
+        <h4>Flex children align evenly with first and last child at the edge of container</h4>
+
+        <div class="container" id="container-justify-space-between">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+
+    </div>
+
+    <div class="example-box justify-content-container">
+
+        <h2>justify-content: space-around;</h2>
+        <h4>Flex children distributed evenly, with half-size space on either end </h4>
+        
+        <div class="container" id="container-justify-space-around">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+
+    </div>
+
+    <div class="example-box justify-content-container">
+
+        <h2>justify-content: space-evenly;</h2>
+        <h4>Flex children are completely evenly distributed </h4>
+        
+        <div class="container" id="container-justify-space-evenly">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+
+    </div>
+
+    <h1>align-items</h1>
+    <h2>Aligning items on the cross axis</h2>
+
+    <div class="example-box align-items-container">
+
+        <h2>align-items: center;</h2>
+        <h4>Flex children default to inheriting height of tallest flex child, as align-items default value is stretch</h4>
+        
+        <div class="container" id="container-align-items-center">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-align-item">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-5">5</div>
+        </div>
+
+    </div>
+
+    <div class="example-box align-items-container">
+
+        <h2>align-items: flex-start;</h2>
+        <h4>Flex children align at start of cross axis (top side)</h4>
+        
+        <div class="container" id="container-align-items-flex-start">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-align-item">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-5">5</div>
+        </div>
+
+    </div>
+
+    <div class="example-box align-items-container">
+
+        <h2>align-items: flex-end;</h2>
+        <h4>Flex children align at bottom of cross axis (bottom side)</h4>
+        
+        <div class="container" id="container-align-items-flex-end">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-align-item">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-5">5</div>
+        </div>
+
+    </div>
+
+    <h1>Flex grow - Flex Shrink - Flex Basis</h1>
+    <h2>Changing size of flex children</h2>
+
+    <div class="example-box flex-basis-container">
+
+        <h2>Container has flex-grow: 1;</h2>
+        <h4>All flex items grow to fill the container, eliminate the empty space</h4>
+        
+        <div class="container" id="container-flex-grow">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-5">5</div>
+        </div>
+
+    </div>
+
+    <div class="example-box flex-basis-container">
+
+        <h2>Box 1 has flex-grow: 5; --- </h2>
+        <h4>Box 1 is 5 times larger than the inital flex child size</h4>
+        
+        <div class="container" id="container-flex-grow-individual">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-5">5</div>
+        </div>
+
+    </div>
+
+
+
+     
+</body>
+</html>
